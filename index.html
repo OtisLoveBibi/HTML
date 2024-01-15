@@ -6,18 +6,124 @@
     <meta charset="utf-8">
     <title>首頁</title>
     <style>
-        h2{
-            background-color:#F5EEE6 ;
-            color :#FFF8E3
+        h2 {
+            background-color: #F5EEE6;
+            color: #FFF8E3
         }
-        h1{
+
+        .head-title {
             color: #F3D7CA;
             background-color: #E6A4B4;
+            font-size: 50px;
+            margin: 24px 48px;
+            padding: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
         }
+
+        .sub-title {
+            color: navy;
+            background-color: aqua;
+            font-size: 32px;
+            border: black 2px solid;
+            padding-left: 16px;
+            margin: 12px;
+        }
+
         body {
             background-color: #EBD9B4;
             color: black;
             font-family: 'Courier New', Courier, monospace;
+        }
+
+
+
+
+        #info {
+            background-color: cornflowerblue;
+            color: darkslateblue;
+            padding: 20px
+        }
+
+        .slogan {
+            background-color: aqua;
+            color: black;
+            font-size: 1.4rem;
+        }
+
+        #container {
+            padding: 1rem;
+        }
+
+        .image {
+            background-color: white;
+            padding: 12px;
+            width: 28%;
+        }
+
+        #photo {
+            text-align: center;
+            background-color: #9DBC98;
+            border-radius: 2rem;
+            padding: 24px 0;
+        }
+
+        table {
+            width: 60%;
+            height: 300px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        thead {
+            background-color: burlywood;
+            color: darkblue;
+        }
+
+        td:first-child {
+            background-color: coral;
+            color: white;
+        }
+
+        td:nth-child(3) {
+            background-color: chocolate;
+        }
+
+        #videos {
+            text-align: center;
+
+        }
+
+        #post-form{
+            text-align: center;
+        }
+
+        form{
+            width: 60%;
+            margin: 0 auto;
+            background-color: azure;
+            color:midnightblue;
+            padding: 1rem 0;
+            border-radius: 24px;
+            margin-top: 6px;
+        }
+        input,
+        label,
+        button{
+            margin: 12px 0;
+            font-size: 12px;
+        }
+
+        textarea{
+            margin: 12px 0;
+            font-size: 12px;
+            background-color: white;
+        }
+
+        button{
+            background-color: aquamarine;
+            width: 100px;
+            border-radius: 6px;
         }
     </style>
 
@@ -25,17 +131,26 @@
 
 
 <body>
-    <h1>我愛健身網站</h1>
 
-    <b>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。</b>
-    <p>
-        除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。</p>
+    <div id="container">
 
-    <em>如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在舞臺上或者是電影螢幕上綻放光彩。<u>答案就是堅持<b>運動健身!</em></b></u>
-    <hr>
-    <a target="_blank" href="https://images.uiiiuiii.com/wp-content/uploads/2018/06/i-bn20180629-2-02.jpg"><img src="https://images.uiiiuiii.com/wp-content/uploads/2018/06/i-bn20180629-2-02.jpg" alt="找不到圖片" width="50%"></a>
-    
-    <h2>健身的10個好處<h2></h2>
+        <div class="head-title">我愛健身網站
+            <span class="eng-title">GYM WEB</span>
+        </div>
+        <div id="info">
+            <b>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。</b>
+            <p>
+                除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。</p>
+
+            <em>如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在舞臺上或者是電影螢幕上綻放光彩。<u
+                    class="slogan">答案就是堅持<b>運動健身!</em></b></u>
+        </div>
+        <hr>
+        <a target="_blank" href="https://images.uiiiuiii.com/wp-content/uploads/2018/06/i-bn20180629-2-02.jpg"><img
+                src="https://images.uiiiuiii.com/wp-content/uploads/2018/06/i-bn20180629-2-02.jpg" alt="找不到圖片"
+                width="50%"></a>
+
+        <div class="sub-title">健身的10個好處</div>
         <ol type="i">
             <li>增加基礎代謝率</li>
             <li>預防疾病和提高免疫力</li>
@@ -49,10 +164,12 @@
             <li>增加肌肉助於減肥</li>
         </ol>
         <hr>
-        <img src="images/anastase-maragos-7kEpUPB8vNk-unsplash.jpg" alt="" width="30%">
-        <img src="images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg" alt="" width="30%">
-        <img src="images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="" width="30%">
-        <h2>好文章連結</h2>
+        <div id="photo">
+            <img class="image" src="images/anastase-maragos-7kEpUPB8vNk-unsplash.jpg" alt="" width="30%">
+            <img class="image" src="images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg" alt="" width="30%">
+            <img class="image" src="images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="" width="30%">
+        </div>
+        <div class="sub-title">好文章連結</div>
         <ul>
             <li><a target="_blank"
                     href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">健身初學者必看！10個常見的健身迷思</a>
@@ -99,40 +216,54 @@
                     <td>40大卡 X 目前體重（公斤）</td>
                     <td>235大卡 X 目前體重（公斤）</td>
                 </tr>
-                
+
             </tbody>
         </table>
         <p>
             <b>
                 <a href="bmi.html">計算BMI:&nbsp;&nbsp;&nbsp;</a></b>
-        一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
-        
-        <b>計算所需熱量:&nbsp;&nbsp;&nbsp;</b>因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+            一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
+
+            <b>計算所需熱量:&nbsp;&nbsp;&nbsp;</b>因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
         </p>
-        
+
 
 
 </body>
 <hr>
-<h2>健身影片</h2>
-<iframe width="100%" height="486" src="https://www.youtube.com/embed/UVYn8FmMbPc" title="&quot;TABATA &quot;(FULL BODY—LEVEL: BEGINNER)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="100%" height="486" src="https://www.youtube.com/embed/-hSma-BRzoo" title="20 Min Fat Burning HIIT Workout -  Full body Cardio, No Equipment, No Repeat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="sub-title">健身影片</div>
+<div id="videos">
+    <iframe width="48%" height="486" src="https://www.youtube.com/embed/UVYn8FmMbPc"
+        title="&quot;TABATA &quot;(FULL BODY—LEVEL: BEGINNER)" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <iframe width="48%" height="486" src="https://www.youtube.com/embed/-hSma-BRzoo"
+        title="20 Min Fat Burning HIIT Workout -  Full body Cardio, No Equipment, No Repeat" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</div>
 <video src="videos/file_example_MP4_640_3MG.mp4" controls></video>
 <hr>
-<h2>表單填寫</h2>
+<div class="sub-title">表單填寫</div>
+<div id="post-form">
+    <h3>需要更多資訊?免費索取健身資訊</h3>
+    前100名還贈送［我愛健身］書籍一本!<br>
 
-<h3>需要更多資訊?免費索取健身資訊</h3>
-前100名還贈送［我愛健身］書籍一本!<br>
 
+    <form action="" method="GET">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="請輸入Email" required>
+        <br>
+        <label for="info">建議: </label>
+        <textarea name="info" id="info" cols="30" rows="10"></textarea>
+        <p>
+        <button type="submit">Log in</button>
+        <button type="rewset" style="background-color: red;">Clear</button>
 
-<form action="" method="GET">
-    <label for="email">Email: </label>
-    <input type="email"  id="email" name="email" placeholder="請輸入Email" required>
-    <br>
-    <label for="info">建議: </label>
-    <textarea name="info" id="info" cols="30" rows="10"></textarea>
-    <button type="submit">Log in</button>
-    
-</form>
+        </p>
+    </form>
+</div>
+</div>
+</body>
 
 </html>
